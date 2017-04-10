@@ -1,6 +1,12 @@
 // express set up
 var express = require('express')
 var app = express()
+
+if(process.env.PORT){
+  var port = process.env.PORT
+} else {
+  port = 4000
+}
 var port = 4000
 
 // mongoose setup
